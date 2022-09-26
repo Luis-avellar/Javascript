@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DOM</title>
+    <style>
+        body {
+            background-color: rgb(77, 67, 168);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula sobre DOM</h1>
+    <p>Aqui tem um resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Js</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+       /* var dado = window.document.getElementById('msg')
+        dado.style.background='green'
+        dado.innerText='Estou aguardando...'*/ 
+        var dado = document.querySelector('#msg')
+        dado.style.fontSize='21pt'
+        dado.style.color='yellow'
+    </script>
+</body>
+</html>
