@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comando IF</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.2em;
+        }
+        input[type=button]{
+            width: 120px;
+            height: 30px;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Velocidade Limite</h1>
+    <label for="txtl1">Insira sua velocidade:</label>
+    <input type="number" name="txtl1" id="txtl1"> Km/h
+    <input type="button" value="Calcular" onclick="calcular()">
+    <div id="tela"></div>
+    <script>
+        function calcular(){
+        var txtl1 = window.document.getElementById('txtl1')
+        var res = window.document.getElementById('tela')
+        var l1 = Number(txtl1.value)
+        res.innerHTML = `<p>Sua velocidade atual é:<strong>${l1}</strong></p>`
+        if (l1>60){
+            window.document.getElementById('tela')
+            tela.innerHTML += `<em>Velocidade informada acima da permitida:</em> <strong>Multado</strong>`
+        } else {
+            window.document.getElementById('tela')
+            tela.innerHTML += `<em>Motorista dentro dos limites de velocidade:</em> <strong>Tenha uma boa viagem!</strong>`
+        }
+    }
+    </script>
+</body>
+</html>

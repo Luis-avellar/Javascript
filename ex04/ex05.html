@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando DOM</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font: normal 18pt Arial;
+        }
+        body {
+            background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+            color: white;
+        }
+        #msg {
+            width: 300px;
+            height: 200px;
+            line-height: 200px;
+            margin: 15px;
+            background-color: yellow;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Praticando DOM</h1>
+    <div id="msg" onclick="clicar()" onmouseenter="entrada()" onmouseout="saida()" onmousedown="demorouDemais()">
+        Clique aqui
+    </div>
+    <script>
+        function clicar() {
+            var cor = window.document.getElementById('msg')
+            msg.innerText='Mudou'
+            msg.style.background='red'
+        }
+        function entrada() {
+            var entrar = window.document.getElementById('msg')
+            msg.innerText='Entrou!'
+            msg.style.background='white'
+            msg.style.color='blue'
+        }
+        function saida() {
+            var saidera = window.document.getElementById('msg')
+            msg.innerText='Valeu, se adianta'
+            msg.style.background='Black'
+        }
+        function demorouDemais(){
+            var demora = window.document.getElementById('msg')
+            msg.innerHTML='Dedo pesado'
+            msg.style.background='yellowgreen'
+            msg.style.fontSize='21pt'
+        }
+    </script>
+</body>
+</html>
