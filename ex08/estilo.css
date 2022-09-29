@@ -13,16 +13,32 @@ header {
     text-align: center;
     margin: 15px;
 }
-div {
-    text-align: center;
-}
 section {
     width: 500px;
     margin: auto;
     border-radius: 5px;
     padding: 15px;
     background-color: white;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.39);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+}
+div p {
+    padding: 6px;
+}
+#res {
+    padding: 9px;
+}
+input[type=button] {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.575);
+    border-radius: 7px;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+input[type=number]{
+    height: 27px;
+    border:1px solid black;
+    border-radius: 5px;
 }
 footer {
     color: white;
