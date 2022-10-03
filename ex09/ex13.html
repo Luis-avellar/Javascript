@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Contador</title>
+</head>
+<body>
+    <header>
+        <h1>Um Contador</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="number1">Inicio: </label>
+                <input type="number" name="number1" id="n1">
+            </p>
+            <p>
+                <label for="number2">Fim: </label>
+                <input type="number" name="number2" id="n2">
+            </p>
+            <p>
+                <label for="number3">Passo: </label>
+                <input type="number" name="number3" id="n3">
+            </p>
+            <p>
+                <input type="button" value="Calcular" onclick="calcular()">
+            </p>
+        </div>
+        <div id="res">
+            Preparando para contagem...
+        </div>
+    </section>
+    <footer>
+        <h2>&copy; <em>CursoemVideo</em></h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
